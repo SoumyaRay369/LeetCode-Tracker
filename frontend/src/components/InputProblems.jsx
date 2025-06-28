@@ -10,7 +10,8 @@ export const InputProblems = () => {
             },
             body: JSON.stringify({
                 problemName: problemName
-            })
+            }), 
+            credentials: "include"
         })
         .then(res => res.json())
         .then(data => setMessageFromServer(data.message))

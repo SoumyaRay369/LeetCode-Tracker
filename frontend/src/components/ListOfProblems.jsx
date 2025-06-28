@@ -19,7 +19,9 @@ export const ListOfProblems = () => {
       return;
     }
 
-    fetch(`https://leetcode-tracker-nmyj.onrender.com${route}`)
+    fetch(`https://leetcode-tracker-nmyj.onrender.com${route}`, {
+      credentials: "include"
+    })
       .then((res) => res.json())
       .then((data) => {
         const formattedChartData = data.listOfProblems.map((entry) => ({
