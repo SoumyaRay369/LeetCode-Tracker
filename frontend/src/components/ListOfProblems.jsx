@@ -19,7 +19,7 @@ export const ListOfProblems = () => {
       return;
     }
 
-    fetch(`http://localhost:3000${route}`)
+    fetch(`https://leet-code-tracker-backend-weld.vercel.app${route}`)
       .then((res) => res.json())
       .then((data) => {
         const formattedChartData = data.listOfProblems.map((entry) => ({

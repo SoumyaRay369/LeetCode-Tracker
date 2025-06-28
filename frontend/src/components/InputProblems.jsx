@@ -3,7 +3,7 @@ export const InputProblems = () => {
     const [problemName, setProblemName] = useState('')
     const [messageFromServer, setMessageFromServer] = useState('')
     const addProblem = (problemName) => {
-        fetch('http://localhost:3000/addProblemStatement', {
+        fetch('https://leet-code-tracker-backend-weld.vercel.app/addProblemStatement', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
