@@ -6,7 +6,7 @@ dotenv.config()
 const PORT = process.env.PORT || 5000
 import cors from 'cors'
 app.use(cors({
-    origin: 'https://leet-code-tracker-frontend-gamma.vercel.app/',
+    origin: 'https://leet-code-tracker-frontend-gamma.vercel.app',
     credentials: true
 }))
 
